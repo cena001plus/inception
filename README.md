@@ -11,10 +11,12 @@
 - 解压input_data.rar到你喜欢的目录。
 - 修改train.py中
 ```
-train_dir = 'D:/ML/flower/input_data'  # 训练样本的读入路径
-logs_train_dir = 'D:/ML/flower/save'  # logs存储路径
+train_dir = 'D:/xxxx/xxxxx/input_data'  # 训练样本的读入路径
+logs_train_dir = 'D:/xxxx/xxxxx/save'  # logs存储路径
 ```
 为你本机的目录。
 - 运行train.py开始训练。
-- 训练完成后，修改test.py中的`logs_train_dir = 'D:/ML/flower/save/'`为你的目录。
+- 训练完成后，修改test.py中的`logs_train_dir = 'D:/xxxxxx/save/'`为你的目录。
 - 运行test.py或者gui.py查看结果。
+
+另外本项目分别有inception_resnet_v1, inceptionV1, inceptionV2 和 inceptionV4 四种网络模型，如果像训练某一个模型，可以在train.py文件中修改模型名称并训练，另外需注意的是因为原始图片的尺寸原因，所以模型并不是标准的。
